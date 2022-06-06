@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Studying working with Thymeleaf</title>
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<table class="table">
+  <thead>
+  <tr class="table-dark">
+    <th scope="col">Id</th>
+    <th scope="col">Content</th>
+    <th scope="col">Date</th>
+    <th scope="col">Tag</th>
+    <th scope="col">User id</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="table-dark" th:each="task: ${tasks}">
+    <td th:text="${task.getId()}"/>
+    <td th:text="${task.getContent()}"/>
+    <td th:text="${task.getDate()}"/>
+    <td th:text="${task.getTag()}"/>
+    <td th:text="${task.getUserId()}"/>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
