@@ -3,20 +3,20 @@ package com.example.keepcontol.task;
 import javax.persistence.*;
 import java.time.LocalDate;
 
-@Entity
-@Table
+//@Entity
+//@Table
 public class Task {
 
-    @Id
-    @SequenceGenerator(
-            name = "taskSequence",
-            sequenceName = "taskSequence",
-            allocationSize = 1
-    )
-    @GeneratedValue(
-            strategy = GenerationType.SEQUENCE,
-            generator = "taskSequence"
-    )
+    //@Id
+    //@SequenceGenerator(
+    //        name = "taskSequence",
+//            sequenceName = "taskSequence",
+//            allocationSize = 1
+//    )
+//    @GeneratedValue(
+//            strategy = GenerationType.SEQUENCE,
+//            generator = "taskSequence"
+//    )
     private Long id;
     private String content;
     private LocalDate date;

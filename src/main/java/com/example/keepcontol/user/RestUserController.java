@@ -1,4 +1,4 @@
-package com.example.keepcontol.User;
+package com.example.keepcontol.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package com.example.keepcontol.User;
+package com.example.keepcontol.user;
 
 import org.springframework.stereotype.Service;
 
