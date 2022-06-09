@@ -1,8 +1,9 @@
-package com.example.keepcontol.repos;
+package com.example.keepcontol.user;
 
-import com.example.keepcontol.user.User;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface UserRepository extends CrudRepository<User, Long> {
 
 }
